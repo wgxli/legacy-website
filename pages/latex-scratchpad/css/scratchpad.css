@@ -33,3 +33,26 @@ div.error {
   text-align: center;
   color: #cc0000;
 }
+
+div.column.left {
+    float: left;
+}
+
+div.column.right {
+    float: left;
+}
+
+@media (max-width: 600px) {
+    div.column {
+        width: calc(100% - 50px);
+        height: calc(50% - 50px);
+    }
+
+    div.column.left {
+        float: top;
+    }
+
+    div.column.right {
+        float: bottom;
+    }
+}
